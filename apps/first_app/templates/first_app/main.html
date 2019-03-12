@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+        {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+        <!-- Optional theme --> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript --> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--separate css file-->
+        <link rel="stylesheet" type="text/css" href="{% static 'first_app/styles.css' %}">
+    </head>
+    <body>
+        <!--IMPORTANT: if you want the nav bar, copy and paste from Boostrap navigation component part & delete the form section if you not needed ALSOOO where it's says container-fluid at the beginning just put "container" not fluid to fit with the rest of the below container-->
+        <h3>Hellloooooo</h3>
+        <div class="container">
+            <!--if you want to connect the jumbo with the nav bar so there's no space do: <style> .navbar{
+                margin-bottom:0
+                border-radius: 0; (to avoid the rounded part of the navbar)
+            }-->
+            <div class="jumbotron text-center">
+                <div class="container">
+                    <h1>Welcome</h1>
+                    <p>jkdhkjshdks</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+            <h1 class="page-header">jsakhdjashdkasj <small>Fighting Climate Change</small></h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quos excepturi praesentium, accusamus, accusantium placeat eos necessitatibus ipsam, officiis fugiat debitis mollitia commodi? Repudiandae ipsum ex suscipit aliquam illo explicabo.</p>
+            <p><mark>Lorem ipsum dolor, </mark>sit amet consectetur adipisicing elit. <u>Odit temporibus voluptate dolor sunt, </u>iure tempore obcaecati quos soluta ipsum quae, error optio earum provident ut, perspiciatis possimus dolore. Pariatur, dolore?</p>
+        
+            <hr> <!--horizontal rule to separate & alignment-->
+            <p class="text-left text-uppercase">Left aligned text</p>
+            <p class="text-center">Center aligned text</p>
+            <p class="text-right">Right aligned text</p>
+            <p class="text-justify">Justified text</p>
+            <p class="text-nowrap">No wrap text</p>
+
+            <!--floats-->
+            <div class="pull-right">Div floated to the right</div>
+            <div class="pull-left">Div floated to the left</div>
+
+            <!--clear float & either hr gives space bottom-->
+            <div class="clearfix"></div>
+            <hr>
+            <!--blockquote or blockquote-reverse-->
+            <blockquote class="blockquote-reverse">
+                <p>jhds fdshjfh fdsjkfh fdsjfh</p>
+                <footer>Quote by <cite title="John Doe">John Doe</cite></footer>
+            </blockquote>
+
+            <!--list-->
+            <ul class="list-unstyled">
+                <li>cat</li>
+                <li>sleep</li>
+            </ul>
+
+            <ul class="list-inline">
+                <li>contacts</li>
+                <li>call</li>
+            </ul>
+
+            <hr> <!--contextual colors & hr means to open a new container-->
+            <p class="text-primary">Keiko</p>
+            <p class="text-success">Keiko</p>
+            <p class="text-info">Keiko</p>
+            <p class="text-warning">Keiko</p>
+            <p class="text-danger">Keiko</p>
+            <p class="text-muted">Keiko</p>
+
+            <!--background colors & may want to add padding-->
+            <p class="bg-primary">Keiko</p>
+            <p class="bg-success">Keiko</p>
+            <button class="btn btn-default">Button Default</button>
+            <a href="yahoo.com" class="btn btn-default" role="button">Link</a>
+            <input type="submit" class="btn btn-primary btn-sm" value="Submit"> <!--there is btn-lg, sm, xs size-->
+
+            <div class="container">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Add Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control" placeholder="Add Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select class="form-control">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Upload File</label>
+                        <input type="file">
+                        <p class="help-block">Only png and jpg allowed</p>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">Check me out
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container">
+                <table class="table table-striped table-bordered table-hover table-condensed">
+                    <tr class="danger">
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Keiko</td>
+                        <td>Kamiya</td>
+                        <td>21</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="container">
+                <ul class="list-group">
+                    <li class="list-group-item">Item One</li>
+                    <li class="list-group-item">Item Two</li>
+                </ul>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Item One</a>
+                    <a href="#" class="list-group-item list-group-item-success">Item Two</a>
+                </div>
+            </div>
+
+            <!--wells provide padding-->
+            <div class="well">Hello</div>
+            <div class="well well-lg">Hello</div>
+            <div class="well well-sm">Hello</div>
+
+            <!--alerts-->
+            <div class="alert alert-success" role="alert">Success Alert</div>
+            <div class="alert alert-warning" role="alert">Success Alert</div>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>You can close this alert</div>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 50%">
+                50%</div>
+            </div>
+            <a href="#">Inbox <span class="badge">50</span></a>
+            <button class="btn btn-primary" type="button">
+                Messages <span class="badge">2</span>
+            </button>
+
+            <div class="container">
+                <img class="thumbnail" src="spaceandcat.jpg">
+                <img class="img-rounded" src="spaceandcat.jpg">
+            </div>
+
+            <!--grid: it has 12 columns--8 for the main layout and 4 for the sidebar//md means medium but to fit view table size use format below-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, officiis ut eum quod fuga culpa amet, veniam esse quidem odio delectus adipisci harum a repellat ipsam ducimus, autem iusto neque.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda?</p>
+                    </div>
+                </div>
+
+                <div class="row"> <!--four 3 columns divs//-->
+                        <div class="col-md-3">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, officiis ut eum quod fuga culpa amet, veniam esse quidem odio delectus adipisci harum a repellat ipsam ducimus, autem iusto neque.</p>
+                        </div>
+                        <div class="col-md-3">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, officiis ut eum quod fuga culpa amet, veniam esse quidem odio delectus adipisci harum a repellat ipsam ducimus, autem iusto neque.</p>
+                        </div>
+                        <div class="col-md-3">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, officiis ut eum quod fuga culpa amet, veniam esse quidem odio delectus adipisci harum a repellat ipsam ducimus, autem iusto neque.</p>
+                        </div>
+                        <div class="col-md-3">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, officiis ut eum quod fuga culpa amet, veniam esse quidem odio delectus adipisci harum a repellat ipsam ducimus, autem iusto neque.</p>
+                        </div>
+            </div>
+
+        </div> <!--end of div class container-->
+        <!--div style is the height FROM the bottom of the page-->
+        <div style="height:400px;"></div>
+
+        <img src="{% static 'img/spacecat.jpg' %}" alt="crazycatlady">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hlnx3ZImTw0" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+
+        
+    </body>
+
+</html>
