@@ -162,8 +162,8 @@
             </button>
 
             <div class="container">
-                <img class="thumbnail" src="spaceandcat.jpg">
-                <img class="img-rounded" src="spaceandcat.jpg">
+                <img class="thumbnail" src="{% static 'img/spacecat.jpg' %}" alt="crazycatlady1">
+                <img class="img-responsive" src="{% static 'img/spacecat.jpg' %}" alt="crazycatlady2">
             </div>
 
             <!--grid: it has 12 columns--8 for the main layout and 4 for the sidebar//md means medium but to fit view table size use format below-->
@@ -197,7 +197,7 @@
         <div style="height:400px;"></div>
 
         <img src="{% static 'img/spacecat.jpg' %}" alt="crazycatlady">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hlnx3ZImTw0" frameborder="0" allow="autoplay; encrypted-media"
+        <iframe class="embed-responsive-item" width="700" height="600" src="https://www.youtube.com/embed/hlnx3ZImTw0" frameborder="0" allow="autoplay; encrypted-media"
                     allowfullscreen></iframe>
 
         
